@@ -1,0 +1,12 @@
+CREATE  TABLE  dbo .cadastro
+(
+    CPF VARCHAR2 ( 11 ) NÃO NULO ,
+    NOME VARCHAR2 ( 50 ) NOT NULL ,
+    ALIMENTO VARCHAR ( 50 ) NÃO NULO ,   
+)
+
+ALTER  TABLE  dbo . cadastro
+  ADICIONAR CHAVE PRIMÁRIA CPF_PK DE RESTRIÇÃO (
+    CPF
+  )
+/
